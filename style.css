@@ -1,0 +1,116 @@
+:root {
+  --Orange: hsl(25, 97%, 53%);
+  --White: hsl(0, 0%, 100%);
+  --Light-Grey: hsl(217, 12%, 63%);
+  --Medium-Grey: hsl(216, 12%, 25%);
+  --Dark-Blue: hsl(213, 19%, 18%);
+  --Very-Dark-Blue: hsl(216, 12%, 8%);
+}
+
+body {
+  font-family: "Overpass", sans-serif;
+  font-size: 15px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--Very-Dark-Blue);
+}
+
+.main-container,
+.thank-you {
+  background-color: var(--Dark-Blue);
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  max-width: 375px;
+  gap: 1.5rem;
+  padding: 2rem;
+  border-radius: 1.5rem;
+}
+h1 {
+  color: #fff;
+}
+h2 {
+  color: #fff;
+}
+span {
+  background-color: var(--Medium-Grey);
+  color: var(--Orange);
+  padding: 0.5rem;
+  border-radius: 10rem;
+}
+p {
+  color: var(--Light-Grey);
+  line-height: 1.4;
+}
+ul {
+  display: flex;
+  justify-content: space-between;
+}
+small {
+  font-size: 1rem;
+}
+ul li button {
+  width: 3rem;
+  height: 3rem;
+  text-align: center;
+  border-radius: 100%;
+  background-color: var(--Medium-Grey);
+  color: #fff;
+  border: 0;
+  outline: 0;
+}
+
+button:hover {
+  background-color: var(--Orange);
+}
+button:focus {
+  background-color: var(--Light-Grey);
+}
+.star {
+  background-color: var(--Medium-Grey);
+  display: inline-block;
+  padding: 1rem;
+  width: fit-content;
+  border-radius: 50rem;
+}
+
+.primary-btn {
+  padding: 0.9rem 0;
+  background-color: var(--Orange);
+  border-radius: 50rem;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  outline: 0;
+  border: 0;
+  width: 100%;
+  text-align: center;
+}
+.primary-btn:hover {
+  color: var(--Orange);
+  background-color: #fff;
+}
+.thank-you {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.thank-you img {
+  width: fit-content;
+}
+.result {
+  display: inline-block;
+  background-color: var(--Medium-Grey);
+  padding: 0.3rem 0.5rem;
+  border-radius: 9999px;
+  color: hsl(25, 97%, 53%);
+}
+.hidden {
+  display: none;
+}
